@@ -1,5 +1,5 @@
 window.addEventListener('scroll', () => {
-  document
-    .querySelector('nav')
-    .classList.add.toggle('window-scrolled', window.scrollY > 0)
+  const navElement = document.querySelector('nav')
+  const isScrolled = window.scrollY > 0
+  navElement.classList.toggle('window-scrolled', isScrolled)
 })
