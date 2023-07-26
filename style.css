@@ -1,9 +1,9 @@
 :root {
   --color-primary: #ff7b02;
   --color-primary-variant: #e5a55d;
-  --color-bg-1: #000e17;
+  --color-bg-1: #2E2E2E;
   --color-bg-2: #001e2d;
-  --color-bg-3: #012734;
+  --color-bg-3: #000;
   --color-bg-4: #003347;
   --color-light: #85a2b2;
   --color-white: hsl(0, 0%, 90%);
@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: var(--color-bg-3);
+  background: var(--color-bg-1);
   color: var(--color-light);
   line-height: 1.7;
 }
@@ -45,6 +45,7 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+  color: var(--color-white);
 }
 
 a {
@@ -131,8 +132,8 @@ header {
 
 .header__container {
   display: grid;
-  grid-template-columns: 40% 50%;
-  gap: 10%; /* Fixed missing semicolon */
+  grid-template-columns: 42% 52%;
+  gap: 6%; /* Fixed missing semicolon */
   margin-top: 10rem;
   position: relative;
 }
@@ -154,12 +155,12 @@ header {
 }
 
 .header__image-sm {
-  width: 29rem;
-  height: 36rem;
+  width: 20rem;
+  height: auto;
   overflow: hidden;
   position: absolute;
-  left: 6rem;
-  top: 6rem;
+  left: 5rem;
+  top: 8rem;
   transition: var(--transition);
 }
 
